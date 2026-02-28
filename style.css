@@ -1,0 +1,254 @@
+:root {
+  --primary-color: #ff007f;
+  --secondary-color: #7928ca;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: aqua;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+    position: relative;
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+    /* border-radius: 20px; */
+    /* border: none; */
+    max-width: 440px;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: auto;
+    /* border-radius: 10px ; */
+
+}
+.main-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 10px 20px;
+    position: relative;
+    /* gap: 2em; */
+}
+#displayTime{
+    color: white;
+    font-size: 12px;
+    font-weight: 550;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sub-nav2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.sub-nav-element1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 7px;
+    height: 15px;
+    gap: 0px;
+    line-height: 0.8;
+}
+.vo5g{
+    font-size: 6px;
+    /* height: 8px; */
+    font-weight: bold;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.sub-nav-element2 {
+    /* height: 9px; */
+    width: 14px;
+    fill: white;
+    position: relative;
+    bottom: -2px;
+    /* background-color: white; */
+}
+.sub-nav-element3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11px;
+    width: 23px;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.sub-nav-element3>span{
+    font-size: 9px;
+}
+
+.main-content-container{
+   /* display: flex;
+   flex: row;
+   justify-content: center;
+   align-items: center;
+   height: 80vh; */
+}
+.sub-content-container{
+    position: relative;
+    top: 33px;
+    background: linear-gradient(135deg, #ff4fa1, #ff7bd5, #b44cff);
+    width: 100%;
+    height: 80vh;
+    border-radius: 5px;
+    /* margin: 0px auto; */
+}
+.horizontal-line{
+    position: relative;
+    top: 7px;
+    margin: auto;
+    width: 98%;
+    height: 2px;
+    background-color: white;
+}
+
+/* username,image,sub text, time */
+
+/* body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(144, 79, 79);
+} */
+
+.story-header{
+  padding: 17px 15px;
+  color: white;
+}
+
+.profile-section{
+  display: flex;
+  align-items: center;
+}
+
+.profile-img{
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.profile-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.plus{
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 1px 4px;
+  border: 2px solid white;
+}
+
+.user-info{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.top-row{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.username{
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.time{
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.sub-text{
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+/* center text css */
+.center-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    bottom: 35%;
+}
+.center-text-main{
+    position: absolute;
+    /* background-color: blue; */
+    padding: 0px 35px;
+    text-wrap: wrap;
+    /* word-wrap: wrap; */
+}
+.center-text-main h1{
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.4;
+    font-family: Arial, sans-serif;
+}
+
+/* lower-symble css... */
+
+.lower-text{
+    color: white;
+    font-size: 12px;
+    position: relative;
+    margin-left: 10px;
+    bottom: -5px;
+}
+.lower-symble{
+    position: relative;
+    bottom: -18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+.symble{
+    width: 20px;
+    height: 20px;
+    /* color: white; */
+    /* background-color: white; */
+}
+.symble img{
+    width: 20px;
+    height: 20px;
+}
+
+.action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+
+.action span{
+    color: white;
+    font-size: 12px;
+}

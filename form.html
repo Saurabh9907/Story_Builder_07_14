@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body class="form-body">
+    <div class="form-container">
+        <h2>Create Your Story</h2>
+
+        <input type="text" id="timeInput" placeholder="Top Left Time (e.g. 5:07)" />
+        <input type="text" id="batteryInput" placeholder="Battery % (e.g. 70)" />
+        <input type="text" id="usernameInput" placeholder="Username" />
+        <input type="text" id="storyTimeInput" placeholder="Story Time (e.g. 7s)" />
+        <textarea id="mainTextInput" placeholder="Enter Main Message"></textarea>
+        <input type="file" id="profileInput" />
+
+        <button onclick="generateStory()">Generate Image</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
