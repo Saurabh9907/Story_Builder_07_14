@@ -1,28 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Story</title>
     <link rel="stylesheet" href="form.css">
+       
 </head>
+<body>
 
-<body class="form-body">
     <div class="form-container">
-        <h2>Create Your Story</h2>
+        <div class="form-header">
+            <h2>Build Your Story</h2>
+            <p>Enter some details below to build your story.</p>
+        </div>
 
-        <input type="text" id="timeInput" placeholder="Top Left Time (e.g. 5:07)" />
-        <input type="text" id="batteryInput" placeholder="Battery % (e.g. 70)" />
-        <input type="text" id="usernameInput" placeholder="Username" />
-        <input type="text" id="storyTimeInput" placeholder="Story Time (e.g. 7s)" />
-        <textarea id="mainTextInput" placeholder="Enter Main Message"></textarea>
-        <input type="file" id="profileInput" />
+        <form>
+            
+            <!-- Responsive Row: Username and Time-Only -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="usernameInput">Username</label>
+                    <input type="text" id="usernameInput" name="username" placeholder="Exmaple: alex_walker" required >
+                </div>
 
-        <button onclick="generateStory()">Generate Image</button>
+                <div class="form-group">
+                    <label for="storyTimeInput">Story Time</label>
+                    <input type="text" id="storyTimeInput" name="story_time" placeholder="Example: 8s" required >
+                </div>
+            </div>
+
+            <!-- Full Width Message Input -->
+            <div class="form-group">
+                <label for="mainTextInput">Main Message</label>
+                <textarea id="mainTextInput" name="message" placeholder="Type your message here..." required></textarea>
+            </div>
+
+            <!-- Modern Image File Upload Input -->
+            <div class="form-group">
+                <label for="profileInput">Upload Profile Image</label>
+                <div class="file-upload-wrapper">
+                    <div class="file-upload-label">
+                        <div class="file-upload-icon">📁</div>
+                        <span class="file-upload-text">Drop your image here or browse</span>
+                        <span class="file-upload-hint">Supports: JPG, PNG, WEBP (Max 5MB)</span>
+                    </div>
+                    <input type="file" id="profileInput" name="story_image" class="file-upload-input" accept="image/*">
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+             <button type="reset" class="reset-btn">Reset</button>
+            <button type="button" onclick="generateStory()" class="submit-btn" >Generate Story</button>
+        </form>
     </div>
 
     <script src="script.js"></script>
-</body>
 
+</body>
 </html>
