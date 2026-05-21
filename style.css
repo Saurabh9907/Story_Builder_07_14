@@ -1,6 +1,7 @@
 :root {
   --primary-color: #ff007f;
   --secondary-color: #7928ca;
+  --plusborder-color:linear-gradient(135deg, #ff4fa1, #ff7bd5, #b44cff);
 }
 * {
     padding: 0px;
@@ -145,6 +146,7 @@ body {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  
 }
 
 .plus{
@@ -156,7 +158,8 @@ body {
   border-radius: 50%;
   font-size: 10px;
   padding: 1px 4px;
-  border: 2px solid white;
+  border: 2px solid #ff4fa1;
+  
 }
 
 .user-info{
